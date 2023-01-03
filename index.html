@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div id="inner_header">
+          <div class="logo">
+              <img
+                id="header-img"
+                src="https://ciaokiki.com/content/images/2022/12/Logo-product-landing-page.png"
+                alt="logo"
+              />
+          </div>
+          <nav id="nav-bar">
+            <ul>
+              <li>
+                <a class="nav-link" href="#video">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#shop">Shop</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#account">Account</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <section class="about">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/_ifazFBt3NI?clip=Ugkxv9tA9tWNWxuPYE-zdRn7OW329eKx_G4E&amp;clipt=EAAY4NQD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="shop" id="shop">
+        <div class="product" id="body">
+          <div class="bold">BODY</div>
+          <img class="product_img" src="https://u.makeup.com.ua/w/wh/whgoczkm4lpq.jpg" />
+          <ol>
+            <li>Soothing body balm</li>
+            <li>With coconut oil</li>
+          </ol>
+          <div class="buy">
+            <p class="price">$39</p>
+            <button class="button">BUY</button>
+          </div>
+        </div>
+        <div class="product" id="face">
+          <div class="bold">FACE</div>
+          <img class="product_img" src="https://i.makeup.it/t/tv/tvdqltvsa9ht.jpg" />
+          <ol>
+            <li>Hydrating cream</li>
+            <li>With urea, vit E and HA</li>
+          </ol>
+          <div class="buy">
+            <p class="price">$29</p>
+            <button class="button">BUY</button>
+          </div>
+        </div>
+        <div class="product" id="lips">
+          <div class="bold">LIPS</div>
+          <img class="product_img" src="https://cdn.shopify.com/s/files/1/2074/3191/products/DoveIntimoNeutracare01.jpg?v=1599656554" />
+          <ol>
+            <li>Plumping lip treatment</li>
+            <li>With Peptides and HA</li>
+          </ol>
+          <div class="buy">
+            <p class="price">$19</p>
+            <button class="button">BUY</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="image-container">
+        <img id="skin_closeup" src="https://cdn.shopify.com/s/files/1/0606/5451/8510/files/Glaze_54675b2c-02ce-4e0d-9113-5511f230a319_2480x.jpg?v=1668631130" />
+      </section>
+
+      <section class="account" id="account">
+        <div class="column column_1" id="face">
+          <div class="bold">ACCOUNT BENEFITS</div>
+          <ol class="ol_2">
+            <li>&#10003; Special discounts</li>
+            <li>&#10003; Fast shipping</li>
+            <li>&#10003; Free gifts</li>
+          </ol>
+        </div>
+
+        <div class="column" id="login">
+          <div class="bold">LOGIN</div>
+          <div class="column_2">
+            <input
+            class="login_info"
+            id="email"
+            class="subscribe_2"
+            placeholder="Email Address"
+            type="email"
+            name="email"
+          />
+            <input
+            id="password"
+            class="login_info"
+            placeholder="Password"
+             />
+            <button class="login_button">SIGN IN</button>
+          </div>
+          <ol class="login_text">
+            <li><a href="https://www.google.com/webhp?hl=nl&sa=X&ved=0ahUKEwi5x6OqwZ_8AhWD7rsIHdb6AysQPAgI" target="_blank">Forgot your password?</a></li>
+            <li>Don't have an account? <a href="https://www.google.com/webhp?hl=nl&sa=X&ved=0ahUKEwi5x6OqwZ_8AhWD7rsIHdb6AysQPAgI" target="_blank">Sign up!</a></li>
+          </ol>
+
+        </div>
+      </section>
+
+      <section class="subscribe" id="subscribe">
+        <p>Join us on the road to an effortless glow.</p>
+
+        <p>
+          Grace your inbox with tips, tricks & exclusive content from
+          <span class="bold">MIGNON</span>.
+        </p>
+
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+          class="subscribe_form"
+        >
+          <input
+            id="email"
+            class="subscribe_2"
+            placeholder="Email Address"
+            type="email"
+            name="email"
+          />
+          <input
+            id="submit"
+            class="subscribe_3"
+            type="submit"
+            value="SUBSCRIBE"
+          />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

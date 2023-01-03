@@ -1,0 +1,326 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 32px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  background-color: white;
+  z-index: 10;
+}
+
+#inner_header {
+  width: calc(100%-32px);
+  min-height: 72px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  /* border: 1px solid black; */
+  border-radius: 14px;
+  margin: 32px;
+}
+
+.logo > img {
+  width: 60%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: pink;
+}
+
+nav {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 18px;
+}
+
+.about {
+  position: relative;
+  margin-top: 136px;
+  display: flex;
+  justify-content: center;
+  width: calc(100%-32px);
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+
+.about > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 14px;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  padding: 16px;
+  /* border: 1px solid #000; */
+  border-radius: 14px;
+  background-color: #eee;
+}
+
+.product_img {
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  margin: 20px;
+  border-radius: 14px;
+
+}
+
+ol {
+  padding: 20px;
+}
+
+.price {
+  padding: 10px;
+}
+
+.buy {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  border-radius: 14px;
+}
+
+.image-container {
+  width: calc(50%-32px);
+  display: flex;
+}
+
+#skin_closeup {
+  max-width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 14px;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 2);
+  padding: 16px;
+  /* border: 1px solid #000; */
+  border-radius: 14px;
+  background-color: #eee;
+  gap: 24px;
+}
+
+.column_1 {
+  background-image:url(https://uk.elemis.com/media/catalog/product/cache/bd1f6bda496241c1e5f31bf01582d3f4/5/0/50869_sharp_shower_body_wash_texture_2000x2000.jpg?auto=webp&optimize=high&crop=1:1&width=700);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: larger;
+  text-align: left;
+}
+
+.ol_2 {
+  margin: 50px auto auto auto;
+}
+
+.column_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+  /* border: 2px solid pink; */
+  border-radius: 14px;
+  background-color: #eee;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.login_info {
+  border: 5px;
+  margin: 6px;
+  padding-left: 10px;
+  border-radius: 14px;
+  color: grey;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 10px;
+  background: white;
+  width: 100%;
+}
+
+.login_button {
+  color: black;
+  height: 100%;
+  border: 0;
+  border: 1px solid grey;
+  margin: 0;
+  padding: 10px;
+  background: grey;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.login_text {
+  color: grey;
+  padding-top: 32px;
+}
+
+.login_button:hover {
+  color: black;
+  background: white;
+}
+
+.subscribe {
+  min-height: 75px;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #eee;
+  /* border: 1px solid black; */
+  border-radius: 14px;
+  margin-bottom: 32px;
+  gap: 6px;
+}
+
+.subscribe_form {
+  display: flex;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.subscribe_2 {
+  border: 0;
+  margin: 0;
+  padding-left: 10px;
+  border-radius: 14px 0 0 14px;
+  width: calc(100% / 4);
+}
+
+.subscribe_3, .button {
+  color: grey;
+  height: 100%;
+  border: 0;
+  border-left: 1px solid grey;
+  margin: 0;
+  padding: 10px;
+  background: white;
+  border-radius: 0 14px 14px 0;
+}
+
+.subscribe_3 {
+  width: calc(100% / 4);
+}
+
+.subscribe_3:hover, .button:hover {
+  color: white;
+  background: grey;
+}
+
+.bold {
+  font-family: "Kanit", sans-serif;
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #inner_header {
+    width: calc(100%-4px);
+    padding: 0px 18px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  .shop {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%
+  }
+
+  .account {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .ol_2 {
+    margin: auto;
+    margin-bottom: 32px;
+  }
+
+  .subscribe_2 {
+    width: calc(100% / 2);
+  }
+
+  .subscribe_3 {
+    width: calc(100% / 2);
+  }
+}
